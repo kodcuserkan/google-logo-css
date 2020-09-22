@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(238, 235, 235);
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    height: 130px;
+    width: 130px;
+    border-top: solid 50px #ea4335;
+    border-right: solid 50px #4285f4;
+    border-bottom: solid 50px#34a853;
+    border-left: solid 50px #fbb605;
+}
+
+.logo:before {
+    content: "";
+    position: absolute;
+    top: -142px;
+    left: 73px;
+    border-top: solid 100px transparent;
+    border-left: solid 100px transparent;
+    border-bottom: solid 100px transparent;
+    border-right: solid 100px rgb(238, 235, 235);
+    transform: rotate(90deg);
+}
+
+.logo:after {
+    content: "";
+    position: absolute;
+    background-color: #4285f4;
+    height: 42px;
+    width: 100px;
+    top: 58px;
+    right: -43px;
+}
